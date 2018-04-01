@@ -1,0 +1,29 @@
+*{
+    padding:0;
+    margin:0;
+}
+h1,p{
+    text-align:center;
+}
+.user-form { padding:20px; width:50% }
+.user-form .field { padding: 4px;
+ 
+    width: 400px;
+    margin-left: 20%;}
+
+.user-form .field input { display: inline-block;
+    width: 100%;
+    padding:9px; 
+}
+button{
+    padding: 10px;
+    width: 420px;
+    background:#ffb258;
+    display: inline-block;
+    border:0;
+    font-weight:bold;
+    font-size:20px;
+}
+section{
+    text-align:center;
+}
