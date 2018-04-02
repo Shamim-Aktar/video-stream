@@ -5,7 +5,8 @@
 h1,p{
     text-align:center;
 }
-.user-form { padding:20px; width:50% }
+.user-form {     width: 50%;
+    margin-left: 240px;}
 .user-form .field { padding: 4px;
  
     width: 400px;
@@ -14,6 +15,7 @@ h1,p{
 .user-form .field input { display: inline-block;
     width: 100%;
     padding:9px; 
+    text-indent: 40px;
 }
 button{
     padding: 10px;
@@ -26,4 +28,9 @@ button{
 }
 section{
     text-align:center;
+}
+i{
+    position: relative;
+    top: 28px;
+    left: 10px;
 }
