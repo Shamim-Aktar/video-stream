@@ -7,7 +7,7 @@ h1,p{
 }
 .user-form {     width: 50%;
     margin-left: 240px;}
-.user-form .field { padding: 4px;
+.user-form .field { 
  
     width: 400px;
     margin-left: 20%;}
