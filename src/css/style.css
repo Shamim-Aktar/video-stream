@@ -5,7 +5,7 @@
 h1,p{
     text-align: center;
     margin-left: 80px;
-    margin-top: 5px;
+    
     width: 100%;
     
 }
@@ -29,10 +29,16 @@ button{
     border:0;
     font-weight:bold;
     font-size:20px;
+    margin-top:2px;
 }
 section{
     text-align:center;
     float:right;
+    
+}
+.formErrors{
+    float: right;
+    width: 100%;
 }
 i{
     position: relative;
@@ -44,8 +50,9 @@ i{
     width: 100%;
     padding: 10px;
     text-align:left;
-    margin:2px 0 2px 20%;
+    /*margin:2px 0 2px 20%;*/
     color:#ffffff;
+    
 
 }
 .fa-warning{
