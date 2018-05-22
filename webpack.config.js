@@ -11,7 +11,14 @@ module.exports={
         
            },
            { test: /\.(png||jpe?g|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
-           {  test: /\.(png|jpg|gif)$/, loader:'loader:file-loader' }
+           {  test: /\.(png|jpg|gif)$/, loader:'loader:file-loader',options: {
+            name: '[path][name].[ext]',
+            context: ''
+          } }
         ]
-    }
+    },
+    devServer: {
+        port: 8000,
+        historyApiFallback: true
+      },
 }

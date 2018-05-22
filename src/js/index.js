@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom'
-import SignupForm from './signupcomponent'
+import {BrowserRouter} from 'react-router-dom';
 import  '../css/style.css'
+import App from '../component/app';
+import {history} from "./history"
 
-
-ReactDOM.render( <SignupForm/>, document.getElementById("root"));
-
+//import registerServiceWorker from './registerServiceWorker'
+ReactDOM.render(<BrowserRouter><App/></BrowserRouter>,document.getElementById('root'));
+//registerServiceWorker();

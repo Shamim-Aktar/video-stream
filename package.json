@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack -w --mode development",
+    "start": "webpack-dev-server --mode development",
     "prod": "webpack --mode production"
   },
   "keywords": [],
@@ -12,10 +12,14 @@
   "license": "ISC",
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "history": "^4.7.2",
+    "hls.js": "^0.9.1",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
+    "react-router-dom": "^4.2.2",
     "react-validate-form": "^1.0.6",
     "react-validation": "^3.0.7",
+    "styled-components": "^3.2.6",
     "url": "^0.11.0",
     "url-loader": "^1.0.1",
     "validate.js": "^0.12.0"
@@ -29,6 +33,7 @@
     "file-loader": "^1.1.11",
     "style-loader": "^0.20.3",
     "webpack": "^4.4.1",
-    "webpack-cli": "^2.0.13"
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.4"
   }
 }
