@@ -4,7 +4,7 @@ import {borderColor, headerHeight, containerMaxWidth} from "./theme";
 //import userAvatar from '../image/avatar.png'
 import Watch from './pages/watch'
 import Home from './pages/home';
-import {Route, Switch} from 'react-router-dom'
+import {Route, Switch,Link } from 'react-router-dom'
 import Player from './player';
 
 const AppWrapper = styled.div `
@@ -87,6 +87,7 @@ export default class App extends React.Component {
                         
                     </HeaderUserMenu>
                 </HeaderWrapper>
+                <Link to="watch/1">watch</Link>
             </Header>
             <Main>
                 <Container>

@@ -38,26 +38,20 @@ export default class Player extends Component{
         //const liveChannel = 'tabvn';
 
         if(Hls.isSupported() && this.player) {
-            //const streamURL = 'https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8';
-            const streamURL = 'http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4';
+           // const streamURL = 'https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4';
+            //const streamURL = 'http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4';
             const video = this.player;
 
 
-            video.addEventListener('contextmenu', (e) => {
-
-
-                e.preventDefault();
-                return false;
-            })
-
-
             const hls = new Hls();
-            hls.loadSource('http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4');
+            hls.loadSource('https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4');
             hls.attachMedia(video);
             hls.on(Hls.Events.MANIFEST_PARSED,function() {
                 video.play();
             });
         }
+                
+   
 
     }
     _onTouchInsidePlayer(){
@@ -80,7 +74,10 @@ export default class Player extends Component{
         }
         return <PlayerWrapper>
             <PlayerInner>
-                <video controls={false} onClick={this._onTouchInsidePlayer} style={style} ref={(player) => this.player = player} autoPlay={true} />
+                <video controls={false}
+                 onClick={this._onTouchInsidePlayer} style={style}
+                  ref={(player) => this.player = player} autoPlay={true} 
+                  type="application/x-mpegURL"/>
             </PlayerInner>
             <VideoTitle><VideoLiveButtonTitle>Live</VideoLiveButtonTitle>Garage Live Stream Camera</VideoTitle>
         </PlayerWrapper>
